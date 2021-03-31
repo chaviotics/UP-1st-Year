@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+    char *word = malloc(1000);
+    int index=0;
+
+    puts("Enter a word");
+    gets(word);
+    puts("Enter an index to remove the letter on that index");
+    scanf("%d", &index);
+
+    while(word[index] != '\0'){
+        word[index] = word[index+1];
+        ++index;
+    }
+
+    puts(word);
+}

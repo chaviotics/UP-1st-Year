@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char word1[1000];
+    char word2[1000];
+
+    puts("Enter first word");
+    scanf("%s", word1);
+
+    puts("Enter second word");
+    scanf("%s", word2);
+
+    strcat(word1,word2);
+    puts(word1);
+}
+

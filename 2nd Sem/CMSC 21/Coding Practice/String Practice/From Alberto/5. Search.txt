@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main(){
+    char *word = malloc(1000);
+    char *letter = malloc(1);
+    int i=0;
+    int check = 0;
+
+    puts("Enter a word");
+    gets(word);
+    puts("Enter a letter");
+    gets(letter);
+
+    while(word[i] != '\0'){
+        if(word[i] == letter[0]){
+            puts("YES!");
+            check = 1;
+            break;
+        }
+        ++i;
+    }
+
+    if(check != 1){
+        puts("NO!");
+    }
+}

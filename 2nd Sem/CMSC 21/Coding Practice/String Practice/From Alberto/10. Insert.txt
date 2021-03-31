@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+
+int main(){
+    char word[1000];
+    char letter[1];
+    int i;
+
+    puts("Enter a word");
+    gets(word);
+    puts("Enter a letter to insert it in the word");
+    scanf("%c", letter);
+    puts("Enter an index where to insert the letter");
+    scanf("%d", &i);
+
+
+
+    for(int j=0; j<strlen(word); ++j){
+        if(j == i){
+            printf("%c", letter[0]);
+            printf("%c", word[j]);
+        }
+        else{
+            printf("%c", word[j]);
+        }
+    }
+
+    if(i == strlen(word))
+        printf("%c", letter[0]);
+
+    return 0;
+}

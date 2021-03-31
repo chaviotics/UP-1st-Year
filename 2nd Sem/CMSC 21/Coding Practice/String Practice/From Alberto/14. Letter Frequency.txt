@@ -1,0 +1,103 @@
+#include <stdio.h>
+
+int main(){
+    char sentence[1000];
+    int a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z;
+    a=b=c=d=e=f=g=h=i=j=k=l=m=n=o=p=q=r=s=t=u=v=w=x=y=z=0;
+    int index = 0;
+
+    puts("Enter a sentence");
+    gets(sentence);
+
+    while(sentence[index] != '\0'){
+        //check if the character is a letter base on the ASCII code
+        if((sentence[index] >= 65 && sentence[index] <= 90) || (sentence[index] >= 97 && sentence[index] <= 122)){
+            //check if the letter is an uppercase
+            if(sentence[index] >= 65 && sentence[index] <= 90){
+                if(sentence[index] == 65){++a;}
+                if(sentence[index] == 66){++b;}
+                if(sentence[index] == 67){++c;}
+                if(sentence[index] == 68){++d;}
+                if(sentence[index] == 69){++e;}
+                if(sentence[index] == 70){++f;}
+                if(sentence[index] == 71){++g;}
+                if(sentence[index] == 72){++h;}
+                if(sentence[index] == 73){++i;}
+                if(sentence[index] == 74){++j;}
+                if(sentence[index] == 75){++k;}
+                if(sentence[index] == 76){++l;}
+                if(sentence[index] == 77){++m;}
+                if(sentence[index] == 78){++n;}
+                if(sentence[index] == 79){++o;}
+                if(sentence[index] == 80){++p;}
+                if(sentence[index] == 81){++q;}
+                if(sentence[index] == 82){++r;}
+                if(sentence[index] == 83){++s;}
+                if(sentence[index] == 84){++t;}
+                if(sentence[index] == 85){++u;}
+                if(sentence[index] == 86){++v;}
+                if(sentence[index] == 87){++w;}
+                if(sentence[index] == 88){++x;}
+                if(sentence[index] == 89){++y;}
+                if(sentence[index] == 90){++z;}
+            }
+            else{
+                if(sentence[index] == 97){++a;}
+                if(sentence[index] == 98){++b;}
+                if(sentence[index] == 99){++c;}
+                if(sentence[index] == 100){++d;}
+                if(sentence[index] == 101){++e;}
+                if(sentence[index] == 102){++f;}
+                if(sentence[index] == 103){++g;}
+                if(sentence[index] == 104){++h;}
+                if(sentence[index] == 105){++i;}
+                if(sentence[index] == 106){++j;}
+                if(sentence[index] == 107){++k;}
+                if(sentence[index] == 108){++l;}
+                if(sentence[index] == 109){++m;}
+                if(sentence[index] == 110){++n;}
+                if(sentence[index] == 111){++o;}
+                if(sentence[index] == 112){++p;}
+                if(sentence[index] == 113){++q;}
+                if(sentence[index] == 114){++r;}
+                if(sentence[index] == 115){++s;}
+                if(sentence[index] == 116){++t;}
+                if(sentence[index] == 117){++u;}
+                if(sentence[index] == 118){++v;}
+                if(sentence[index] == 119){++w;}
+                if(sentence[index] == 120){++x;}
+                if(sentence[index] == 121){++y;}
+                if(sentence[index] == 122){++z;}
+            }
+        }
+        ++index;
+    }
+    
+    if(a != 0){printf("a = %d", a);}
+    if(b != 0){printf("\nb = %d", b);}
+    if(c != 0){printf("\nc = %d", c);}
+    if(e != 0){printf("\ne = %d", e);}
+    if(f != 0){printf("\nf = %d", f);}
+    if(g != 0){printf("\ng = %d", g);}
+    if(h != 0){printf("\nh = %d", h);}
+    if(i != 0){printf("\ni = %d", i);}
+    if(j != 0){printf("\nj = %d", j);}
+    if(k != 0){printf("\nk = %d", k);}
+    if(l != 0){printf("\nl = %d", l);}
+    if(m != 0){printf("\nm = %d", m);}
+    if(n != 0){printf("\nn = %d", n);}
+    if(o != 0){printf("\no = %d", o);}
+    if(p != 0){printf("\np = %d", p);}
+    if(q != 0){printf("\nq = %d", q);}
+    if(r != 0){printf("\nr = %d", r);}
+    if(s != 0){printf("\ns = %d", s);}
+    if(t != 0){printf("\nt = %d", t);}
+    if(u != 0){printf("\nu = %d", u);}
+    if(v != 0){printf("\nv = %d", v);}
+    if(w != 0){printf("\nw = %d", w);}
+    if(x != 0){printf("\nx = %d", x);}
+    if(y != 0){printf("\ny = %d", y);}
+    if(z != 0){printf("\nz = %d", z);}
+
+    return 0;
+}

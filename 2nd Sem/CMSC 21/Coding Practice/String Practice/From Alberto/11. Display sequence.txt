@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+#include <stdlib.h>
+
+int main(){
+    char nums[1000];
+
+    puts("Enter a sequence of number");
+    gets(nums);
+
+    printf("%d\n", strlen(nums));
+    for(int i=0; i<strlen(nums); ++i){
+        printf("%c", nums[i]);
+            if(i == strlen(nums) - 1)
+                break;
+            else
+                printf(" , ");
+
+
+    }
+
+
+
+    return 0;
+}

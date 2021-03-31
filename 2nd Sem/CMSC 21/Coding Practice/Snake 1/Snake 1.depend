@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1570451493 source:f:\chavs games\chav coding practice\snake 1\main.cpp
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<ctype.h>
+	<time.h>
+	<windows.h>
+	<process.h>
+	<unistd.h>
+

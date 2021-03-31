@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char word[] = "University of the Philippines";
+    int i;
+
+    puts("Enter an integer within the bounds of the word");
+    scanf("%d", &i);
+
+    if(word[i+1] == ' '){
+        printf("Not a letter. It is another character.");
+    }
+    else{
+       printf("Letter %c", word[i-1]);
+    }
+}
